@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>女生购物圣地 | 年轻人潮流购物中心,中国潮流购物风向标</title>
+		<!--icon图标-->
+		<meta name="keywords" content="QIQU! 奇趣官网,潮流志,潮流男装,潮牌,美国潮牌,日本潮牌,香港潮牌,潮牌店,新品首发,欧美潮流,全球购,代购,时尚,流行,特卖,B2C,正品,购物网站,网上购物,货到付款">
+        <meta name="description" content="QIQU!GO 奇趣，年轻人潮流购物中心，中国最大的潮流商品购物网站。100%品牌正品保证，支持货到付款。作为一个时尚的购物平台，汇集了全球潮流时尚商品和中国最流行的商品，带给您全新潮流购物体验。">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<script src="libs/jquery-3.1.0.js"></script>
+		<script src="libs/angular.js"></script>
+		<script src="libs/jquery.cookie.js"></script>
+		<script src="libs/angular-animate.js"></script>
+		<script src="js/banners.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/public.js"></script>
+		<link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/public.css">
+		<link rel="stylesheet" href="css/girls.css" />
+	</head>
+	<body ng-app="QIQU">
+		<div class="header-img"></div>
+		<header>
+			<div class="header-top">
+				<div class="header-t">
+					<div class="header-left">
+						<div class="header-left-hover">
+                             <span></span>
+						     <a href="index.html">QIQU!GO 奇趣</a>
+						</div>
+						<div class="header-left-b">
+							<ul>
+                                <li><a href="">QIQU!</a><i>奇趣</i></li>
+                                <li><a href="">QIQU!BOYS</a><i>男生潮流</i></li>
+                                <li><a href="">QIQU!GIRLS</a><i>女生潮流</i></li>
+                                <li><a href="">QIQU!SHOW</a><i>奇趣展示</i></li>
+                                <li><a href="">QIQU!STYLE</a><i>奇趣风格</i></li>
+                            </ul>
+						</div>
+					</div>
+					<div class="header-right">
+						<ul>
+							<li><span class="hi">Hi~</span>[ <a href="login.html" target="_blank" class="loginbar">请登录</a> ] [ <a href="register.html" target="_blank" class="registerbar">免费注册</a> ]<span>|</span></li>
+							<li><a href="">MY有货</a><i class="i0"></i><span>|</span></li>
+							<li><i class="i1"></i><a href="">我的订单</a><span>|</span></li>
+							<li><i class="i2"></i><a href="">我的收藏</a><span>|</span></li>
+							<li><i class="i3"></i><a href="">消息</a><span>|</span></li>
+							<li><i class="i4"></i><a href="">手机版</a></li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			
+			<div class="header-middle">
+				<div class="header-m-l">
+                    <ul>
+						<li><a href="index.html">
+								<h3>男生</h3>
+								<h3>BOYS</h3>
+							</a></li>
+						<li class="li2"><a href="#">
+								<h3>女生</h3>
+								<h3>GIRLS</h3>
+							</a></li>
+						<li><a href="kids.html">
+								<h3>潮童</h3>
+								<h3>KIDS</h3>
+							</a></li>
+						<li><a href="style.html">
+								<h3>创意生活</h3>
+								<h3>LIFE STYLE</h3>
+							</a></li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+				<div class="header-m-m">
+                     <img src="image/logo-en.png" alt="">
+				</div>
+				<div class="setinterval">
+						<img src="image/logo-ens.png" alt="">
+					</div>
+				<div class="header-m-b">
+					<div class="header-m-bb" ng-controller="searchController">
+                       <form name="searchForm">
+						 <input type="text" class="search" name="search" ng-model="search" placeholder="搜一搜">
+					     <a href=""></a>
+						 <!--搜索跳转-->
+					  </form>
+					</div>
+                    <div class="header-m-cart">
+						<!--当点击添加的时候购物车显示+i-->
+                         <div class="cart"></div>
+						 <!--<div class="cart-show">1</div>-->
+						 <div class="cart-big">
+							 <div class="bigs">
+                                  <img src="image/empty_car.png" alt="">
+								  <p>你的购物车暂无商品</p>
+							 </div>
+						 </div>
+					</div>
+				</div>
+			</div>
+			<div class="header-bottom">
+				<ul class="ul1">
+					<li><a href="">新品到着</a></li>
+					<li><a href="">品牌一览</a></li>
+					<li><a href="">服饰</a></li>
+					<li><a href="">鞋靴</a></li>
+					<li><a href="">包袋</a></li>
+					<li><a href="">配饰·其他</a></li>
+					<li class="news"><a href="">领卷中心</a>
+					  <img src="image/new.png" alt="">
+					</li>
+					<li><a href="">随心逛</a></li>
+					<li><a href="">SALE</a></li>
+				</ul>	
+				<div class="clear"></div>
+			</div>
+		</header>
+
+		<div class="banner">
+		  <div id="box">
+			<ul>
+				<li style="display: block;"><img src="image/g1.jpg" alt="" /></li>
+				<li><img src="image/g2.jpg" alt="" /></li>
+				<li><img src="image/g3.jpg" alt="" /></li>
+				<li><img src="image/g4.jpg" alt="" /></li>
+                <li><img src="image/g5.jpg" alt="" /></li>
+				<li><img src="image/g6.jpg" alt="" /></li>
+				<li><img src="image/g7.jpg" alt=""></li>
+			</ul>
+			<div id="icon">
+				<span class="red-color"></span>
+				<span></span>
+				<span></span>
+				<span></span>
+                <span></span>
+				<span></span>
+				<span></span>
+			</div>
+            <div class="prev"> < </div>
+			<div class="next"> > </div>
+		</div>
+      </div>
+	  <main>
+		  <div class="sameTo">
+			  <div class="sameTo1">
+					<h2>优选品牌 BRAND</h2>
+			  </div>
+			  <div class="nav">
+				  <div class="nav-ul">
+                     <ul>
+						<li><a href=""><img src="image/gt1.jpg" alt=""></a></li>
+						<li style="margin:0 10px;"><a href=""><img src="image/gt2.jpg" alt=""></a></li>
+						<li><a href=""><img src="image/gt3.jpg" alt=""></a></li>
+						<li><a href=""><img src="image/gt4.jpg" alt=""></a></li>
+						<li style="margin:0 9px;"><a href=""><img src="image/gt5.jpg" alt=""></a></li>
+						<li><a href=""><img src="image/gt6.jpg" alt=""></a></li>
+						<li><a href=""><img src="image/gt7.jpg" alt=""></a></li>
+						<li style="margin:0 11px;"><a href=""><img src="image/gt8.jpg" alt=""></a></li>
+						<li><a href=""><img src="image/gt9.jpg" alt=""></a></li>
+					 </ul>
+				  </div>
+				  <div class="lefts"></div>
+				  <div class="rights"></div>
+			  </div>
+			  <div id="logodemo" ng-controller="demoController">
+					<div class="demo" ng-repeat="demo in demos">
+						<div class="line left-top"></div>
+						<div class="line right-bottom"></div>
+						<div class="content">
+							<span><img src = "{{demo.url}}" alt = ""/></span>
+							<em>{{demo.name}}</em>
+							<i></i>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+		  </div>
+         <!--二楼-->
+          <div class="sameTo">
+						<div class="sameTo1">
+							<h2>潮流上装</h2>
+						</div>
+						<div class="three-l">
+							<div class="three-l-top">
+								<a href=""><img src="image/e1.jpg" alt=""></a>
+								<a href=""><img src="image/e2.jpg" alt=""></a>
+								<a href=""><img src="image/e3.jpg" alt=""></a>
+							</div>
+							<div class="three-l-bottom">
+								<a href="">冬着5.8折</a>
+								<a href="">复古学院</a>
+								<a href="">大衣/风衣</a>
+								<a href="">夹克</a>
+								<a href="">卫衣</a>
+								<a href="">毛衣/针织</a>
+								<a href="">简约有型</a>
+								<a href="">运动先锋</a>
+								<a href="">街头原宿</a>
+								<a href="">英伦学院</a>
+								<a href="">街头原宿</a>
+								<a href="">英伦学院</a>
+							</div>
+						</div>
+						<div class="three-m">
+							<img src="image/e4.jpg" alt="">
+						</div>
+						<div class="three-r">
+							<ul class="ulr">
+								<li><img src="image/e5.jpg" alt=""></li>
+								<li><img src="image/e6.jpg" alt=""></li>
+								<li><img src="image/e7.jpg" alt=""></li>
+								<li><img src="image/e8.jpg" alt=""></li>
+								<li><img src="image/e9.jpg" alt=""></li>
+								<li><img src="image/e10.jpg" alt=""></li>
+							</ul>
+						</div>
+						<div class="clear"></div>
+					</div>
+         <!--三楼-->
+           <div class="sameTo">
+						<div class="sameTo1">
+							<h2>休闲</h2>
+						</div>
+						<div class="three-l">
+							<div class="three-l-top">
+								<a href=""><img src="image/e1.jpg" alt=""></a>
+								<a href=""><img src="image/e2.jpg" alt=""></a>
+								<a href=""><img src="image/e3.jpg" alt=""></a>
+							</div>
+							<div class="three-l-bottom">
+								<a href="">包配</a>
+								<a href="">双肩包</a>
+								<a href="">帽子</a>
+								<a href="">配饰</a>
+								<a href="">眼镜</a>
+								<a href="">首饰</a>
+								<a href="">耳机</a>
+								<a href="">数码配件</a>
+								<a href="">手表</a>
+								<a href="">袜子</a>
+								<a href="">内衣</a>
+								<a href="">MORE</a>
+							</div>
+						</div>
+						<div class="three-m">
+							<img src="image/e4.jpg" alt="">
+						</div>
+						<div class="three-r">
+							<ul class="ulr">
+								<li><img src="image/e5.jpg" alt=""></li>
+								<li><img src="image/e6.jpg" alt=""></li>
+								<li><img src="image/e7.jpg" alt=""></li>
+								<li><img src="image/e8.jpg" alt=""></li>
+								<li><img src="image/e9.jpg" alt=""></li>
+								<li><img src="image/e10.jpg" alt=""></li>
+							</ul>
+						</div>
+						<div class="clear"></div>
+					</div>
+                   	<div class="see">
+							<a href="">查看更多</a>
+					</div>
+	         </main>
+
+           <footer>
+				<div class="footer-top">
+					<div class="footer-top-top">
+						<dl>
+							<dd>
+								<div class="title-top">
+									<div class="line"></div>
+									<div class="text">
+										<span>奇趣STYLE</span>
+									</div>
+								</div>
+								<div class="title-bottom">
+									<img src="image/title.gif" alt="">
+								</div>
+							</dd>
+							<dd style="	margin:0 20px;">
+								<div class="title-top">
+									<div class="line"></div>
+									<div class="text">
+										<span>购物STYLE</span>
+									</div>
+								</div>
+								<div class="title-bottom">
+									<img src="image/jinqing.jpg" alt="">
+								</div>
+							</dd>
+							<dd>
+								<div class="title-top">
+									<div class="line"></div>
+									<div class="text">
+										<span>时尚STYLE</span>
+									</div>
+								</div>
+								<div class="title-bottom">
+									<img src="image/right.jpg" alt="">
+								</div>
+							</dd>
+						</dl>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<div class="footer-bottom-bottom">
+						<div class="left-left">
+							<ul>
+								<li>
+									<i></i>
+									<span>100%</span>
+									<a href="">品牌正品</a>
+								</li>
+								<li>
+									<i class="ii2"></i>
+									<span>七天</span>
+									<a href="">无理由退换货</a>
+								</li>
+								<li>
+									<i class="ii3"></i>
+									<span>便捷</span>
+									<a href="">在线客服</a>
+								</li>
+							</ul>
+							<div class="clear"></div>
+						</div>
+						<div class="dl">
+							<dl>
+								<dt>新手指南</dt>
+								<dd>注册登录</dd>
+								<dd>选购商品</dd>
+								<dd>订单支付</dd>
+								<dd>收货退款</dd>
+							</dl>
+							<dl>
+								<dt>新手指南</dt>
+								<dd>注册登录</dd>
+								<dd>选购商品</dd>
+								<dd>订单支付</dd>
+								<dd>收货退款</dd>
+							</dl>
+							<dl>
+								<dt>新手指南</dt>
+								<dd>注册登录</dd>
+								<dd>选购商品</dd>
+								<dd>订单支付</dd>
+								<dd>收货退款</dd>
+							</dl>
+							<dl>
+								<dt>新手指南</dt>
+								<dd>注册登录</dd>
+								<dd>选购商品</dd>
+								<dd>订单支付</dd>
+								<dd>收货退款</dd>
+							</dl>
+							<dl>
+								<dt>新手指南</dt>
+								<dd>注册登录</dd>
+								<dd>选购商品</dd>
+								<dd>订单支付</dd>
+								<dd>收货退款</dd>
+							</dl>
+							<dl>
+								<dt>新手指南</dt>
+								<dd>注册登录</dd>
+								<dd>选购商品</dd>
+								<dd>订单支付</dd>
+								<dd>收货退款</dd>
+							</dl>
+							<dl style="margin-right:0px;">
+								<dt>新手指南</dt>
+								<dd>注册登录</dd>
+								<dd>选购商品</dd>
+								<dd>订单支付</dd>
+								<dd>收货退款</dd>
+							</dl>
+							<div class="footer-last">
+								<div class="footer-f">
+									<a href=""><img src="image/id1.png" alt=""></a>
+									<a href=""><img src="image/id.png" alt=""></a>
+									<a href=""><img src="image/id2.png" alt=""></a>
+								</div>
+								<div class="footer-m">
+									<p>
+										<a href="">返回首页</a><span>|</span>
+										<a href="">QIQU!GO 奇趣</a><span>|</span>
+										<a href="">新力传媒</a><span>|</span>
+										<a href="">联系我们</a><span>|</span>
+										<a href="">商家入驻</a><span>|</span>
+										<a href="">隐私条款</a><span>|</span>
+										<a href="">友情链接</a>
+									</p>
+									<p>CopyRight © 20016-2026 NewPower--ST Co. 版权所有 经营许可证编号：沪A2-20160395</p>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="foot-top">
+					<a href="#top"><span></span></a>
+				</div>
+			</footer>
+
+
+	</body>
+</html>

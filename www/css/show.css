@@ -1,0 +1,233 @@
+.header-img{
+	background-image: url(../image/g1.gif);
+	width: 100%;
+	height: 36px;
+	background-position:  center;
+
+}
+.header-m-l ul .li1{
+	background-color: #3a3a3a;
+}
+.header-m-l ul .li1 a h3{
+	color:#fff;
+}
+.header-m-l ul .li1 a h3:nth-of-type(2){
+	color:#fff; 
+}
+.header-bottom{
+	background-color:#3a3a3a;
+}
+.header-m-cart .cart{
+	background-image: url(../image/shop.png);
+}
+.header-m-bb form a{
+	background-color: #000;
+}
+.header-left-b ul li i{
+	background-color: #3a3a3a;
+	border:1px solid #3a3a3a;
+}
+main{
+	width: 1150px;
+	margin: 0 auto;
+}
+.top{
+	height: 30px; line-height: 30px;
+	margin: 15px 0;
+}
+.top a{
+	font-size: 14px;
+}
+.top span{
+	font-size: 14px;
+	color: #666;
+	font-weight: 700;
+}
+.top-t{
+	width: 1150px;
+	height: 200px;
+}
+.top-t img{
+	width: 100%;
+	height: 100%;
+}
+.top-b{
+	width: 100%;
+	height:40px;
+	line-height: 40px; 
+	background:#000;
+}
+.top-b ul li{
+	float: left;
+	width: 160px;
+	text-align: center;
+}
+.top-b ul li a{
+	color: #fff;
+}
+.show-left{
+	float: left;
+	width: 160px;
+}
+
+.show-left .show-left-a{
+	margin-top: 20px;
+}
+
+.show-left .show-left-a .ul-left .ul-li:nth-of-type(1){
+margin-left: -15px;
+}
+.show-left .show-left-a .ul-left .ul-li h3{
+	height: 28px;
+    line-height: 28px;
+    color: #222;
+    /*font-weight: 700;*/
+    text-indent: 10px;
+    cursor: pointer;
+	font-size: 13px;
+	position: relative;
+	padding-left: 5px;
+	font-family: '微软雅黑';
+}
+.show-left .show-left-a .ul-left .ul-li h3 span{
+	display: inline-block;
+	border-top: 6px solid #fff;
+	border-left: 6px solid #000;
+	border-bottom: 6px solid #fff;
+	position: absolute;
+	top: 50%;
+	margin-top: -7px;
+	left: 0;
+
+}
+
+.border-line{
+	border-top: 6px solid #000!important;
+	border-right:6px solid #fff;
+	border-left: 6px solid #fff!important;
+	margin-top: -5px!important;
+}
+
+.show-left .show-left-a .ul-left .ul-li ul{
+	display: none;
+	margin-left: 5px;	
+}
+.show-left .show-left-a .ul-left .ul-li ul li a{
+     font-size: 12px;
+    color: #666;
+    padding-left: 10px;
+    height: 22px;
+    line-height: 22px;
+}
+.show-left-bottom{
+	margin-top: 10px;
+	width: 160px;
+	border-top:1px solid #ccc;
+	height: 252px;
+	padding-top: 10px;
+}
+
+.show-right{
+	float: right;
+	width: 980px;
+}
+.box{border: 1px solid #ccc;border-bottom: none;margin-top: 20px; }
+.box ul li{line-height:40px;border-bottom:1px dashed #ccc;}
+.box ul li .name{font-weight:bold;font-size: 13px; padding-left: 25px;}
+.box ul li .intro a{color:#999;padding:5px; font-size: 12px;margin-right: 15px;;}
+.box ul li .intro a:hover{background:#36c;color:#fff;}
+.box ul li .intro em{font-style:normal;padding:1px 8px;margin:0 5px;background:orangered;color:#fff;}
+.box ul li.choose .intro span {line-height:20px;padding:5px 0 5px 10px;color:orangered;border:1px solid orangered;display:none;cursor:pointer;}
+.box ul li.choose .intro a{color:orangered;}
+.box ul li .intro a i{display: inline-block;font-style: normal;width: 22px; height: 22px;border: 1px solid #ccc; background-color: #000;vertical-align: middle; margin-right: 5px;}
+.box ul li .intro span a:hover{color:#fff!important;background:#36c;}
+.selected{color:#fff!important;background:#36c;}
+.box-b{
+	background: #f5f7f6;
+	width: 980px;
+	height: 48px;
+	line-height: 48px;
+	margin-top: 10px;
+
+}
+.box-b-l{
+	float: left;
+	padding-left: 5px;
+}
+.box-b-l span{
+	font-size: 12px;
+	font-weight: bold;
+}
+.box-b-l a{
+	font-size: 12px;
+	color: #999;
+}
+.box-b-l input{
+	vertical-align: middle;
+	margin:0 5px;
+}
+.box-b-l label{
+	font-size: 12px;
+}
+.box-b-r{
+	float: right;
+	padding-right: 5px;
+}
+.box-b-r span{
+	margin: 0 5px;
+	font-size: 14px;
+}
+.box-b-r a i{
+	font-style: normal;
+	font-size: 14px;
+}
+.vip{
+	margin-top: 40px;
+}
+.vip ul li{
+	width: 235px;
+	height: 394px;
+	float: left;
+	margin-right: 13px;
+	position: relative;
+}
+.vip ul li a{
+	display: inline-block;
+	width: 235px;
+	height: 315px;
+}
+.vip ul li a p{
+	font-size: 12px;
+	line-height: 20px;
+}
+.vip ul li a p:nth-of-type(1){
+	font-size: 14px;
+	
+}
+.vip ul li a img{
+	width: 100%;
+	height: 100%;
+}
+.vip ul li .vip-big{
+	display: none;
+	position: absolute;
+	left: -10px;
+	top: -15px;
+	width: 350px;
+	height: 400px;
+	border: 1px solid #ccc;
+	z-index: 10;
+	background-color: #fff;
+}
+.vip ul li .vip-big img{
+   width: 235px;
+   height: 315px;
+    float: left;
+	margin: 20px 0 0 20px;
+}
+.vip ul li .vip-big img:nth-of-type(2){
+   width: 50px;
+   height: 70px;
+   float: right;
+   margin: 15px;
+}

@@ -1,0 +1,180 @@
+
+
+.header-m-l ul .li1{
+	background-color: #3a3a3a;
+}
+.header-m-l ul .li1 a h3{
+	color:#fff;
+}
+.header-m-l ul .li1 a h3:nth-of-type(2){
+	color:#fff; 
+}
+.header-bottom{
+	background-color:#3a3a3a;
+}
+.header-m-cart .cart{
+	background-image: url(../image/shop.png);
+}
+.header-m-bb form a{
+	background-color: #000;
+}
+.header-left-b ul li i{
+	background-color: #3a3a3a;
+	border:1px solid #3a3a3a;
+}
+
+
+/*轮播图*/
+.banner{width:1150px; margin: 10px auto 0; position: relative; }
+.banner #box{position: relative; width: 1150px;height: 520px;}
+.banner #box ul{height: 520px;}
+.banner #box ul li{position: absolute;display: none;}
+.banner #icon{position: absolute;bottom: 0px;left: 0;}
+.banner #icon a{margin-right: 5.5px; display: inline-block;width: 138px;float: left;height: 54px;}
+.red-color{opacity: 0.5;}
+.banner .prev,.banner .next{display: none; position: absolute;padding: 10px 15px;background:#fff;opacity: 0.95; color: #59585a;top: calc(50% - 24px);font-size: 20px;}
+.prev{left: 0px;cursor: pointer;}
+.next{right: 0px; cursor: pointer;}
+/*main部分*/
+main{
+	width: 1150px;
+	margin: 0 auto;
+}
+.sameTo .sameTo1{
+	border: 1px solid #000;
+    text-align: center; 
+	margin: 80px auto 40px;
+	width: 298px;
+	height: 31px;
+	line-height: 31px;
+}
+.sameTo .sameTo1 h2{
+	font-size: 16px;
+	font-family: '宋体';
+	font-weight: 400;
+}
+.sameTo .sameTo2 ul li{
+	float: left;
+	margin: 0 0 8px 6px;
+}
+.sameTo .sameTo2 ul li a img:hover{
+  opacity: 0.5;
+}
+.sameTo .sameTo2 ul .special a img:hover{
+  opacity: 1;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.sameTo .sameTo11{width: 868px;float: left;}
+.sameTo .sameTo11 ul li{float: left; margin: 0 0px 8px 8px; width: 185px;height: 248px;}
+.sameTo .sameTo11 ul li:nth-of-type(1){
+	width: 282px;
+	height: 504px;
+	margin: 0 0 8px 0;
+}
+.sameTo .sameTo11 ul li img{
+	width: 100%;
+	height: 100%;
+}
+.sameTo .sameTo2-r img{
+	float:left;
+    width: 282px;
+	height: 504px;
+}
+.sameTo .sameTo2-r img:hover{
+	transform: scale(1.01,1.01);
+	border: 1px solid #fff;
+	box-shadow: 5px 5px 5px #333;
+}	
+.sameTo .sameTo2-b a img{
+	width: 100%;
+	height: 100%;
+	}
+.sameTo .sameTo2-b a img:hover{
+	box-shadow: 5px 5px 5px #333;
+	}
+.sameTo .sameTo11 ul li a img:hover{
+  opacity: 0.5;
+}
+.sameTo .sameTo3{width: 1150px;position: relative; overflow: hidden; height: 175px;}
+.sameTo3:hover .moveon{display: block;}
+.sameTo3:hover .hidenext{display: block;}
+.sameTo3 .mmm{position: relative}
+.sameTo3 ul li{float: left; height: 175px;margin-right: 6.5px;}
+.sameTo3 ul li img{ width: 378px;height: 175px;margin-right: 1px; font-size: 0;}
+.sameTo3 .move{position: absolute; left: 0;width: 1150px;}
+.sameTo3 .hide{position: absolute;left: 1150px;width: 1150px;}
+.sameTo3 .hides{position: absolute;left: 2300px;width: 1150px;}
+.sameTo3 .moveon,.sameTo3 .hidenext{display: none; position: absolute; font-size: 22px; background: rgba(10,10,10,0.3);color: #fff; top: calc(50% - 26px); padding: 15px 10px;}
+.moveon{left: 0px;}
+.hidenext{right: 0px;}
+
+.three-l{
+	width: 185px;
+	float: left;
+}
+.three-l .three-l-top a img{
+	margin-bottom: 5px;
+}
+.three-l .three-l-bottom{
+	height: 248px;
+	padding: 10px 0;
+	background-color: #f8f8f8;
+	margin-top: 2px;
+}
+.three-l .three-l-bottom a{
+	float: left;
+	width: 50%;
+	text-align: center;
+	display: inline-block;
+	height: 38px;
+	font-size: 14px;
+	line-height: 38px;
+}
+.three-l .three-l-bottom a:hover{
+	color: #f00;
+	transform: scale(1.1,1.1);
+}
+.three-m{
+	width: 378px;
+	height: 512px;
+	float: left;
+	margin-left: 8px;
+}
+.three-m img:nth-of-type(2){
+	margin-top: 8px;
+}
+.three-r{
+	width: 579px;
+	float: left;	
+}
+.three-r .ulr li{
+	width: 185px;
+	height: 248px;
+	float: left;
+	margin: 0px 0 0 8px; 
+}
+.three-r .ulr li img:hover{
+	opacity: 0.5;
+}
+.three-m img:hover{
+	opacity: 0.5;
+}
+.three-bottom{
+	margin-top: 8px;
+}
+.three-bottom .ulb li{
+	float: left;
+	margin-left: 10px;
+}
+.three-bottom .ulb li:nth-of-type(1){
+	margin-left: 0px;
+}
+.three-bottom .ulb li img:hover{
+	opacity: 0.5;
+}

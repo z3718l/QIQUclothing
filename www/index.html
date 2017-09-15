@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>QIQU!GO 奇趣 | 年轻人潮流购物中心,中国潮流购物风向标,官方授权正品保证</title>
+		<!--icon图标-->
+		<meta name="keywords" content="QIQU! 奇趣官网,潮流志,潮流男装,潮牌,美国潮牌,日本潮牌,香港潮牌,潮牌店,新品首发,欧美潮流,全球购,代购,时尚,流行,特卖,B2C,正品,购物网站,网上购物,货到付款">
+		<meta name="description" content="QIQU!GO 奇趣，年轻人潮流购物中心，中国最大的潮流商品购物网站。100%品牌正品保证，支持货到付款。作为一个时尚的购物平台，汇集了全球潮流时尚商品和中国最流行的商品，带给您全新潮流购物体验。">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<script src="libs/jquery-3.1.0.js"></script>
+		<script src="libs/angular.js"></script>
+		<script src="libs/angular-animate.js"></script>
+		<script src="libs/jquery.cookie.js"></script>
+		<script src="js/banner.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/public.js"></script>
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/public.css">
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body ng-app="QIQU" ng-controller="qiquCon">
+		<header>
+			<div class="header-top">
+				<div class="header-t">
+					<div class="header-left">
+						<div class="header-left-hover">
+							<span></span>
+							<a href="#">QIQU!GO 奇趣</a>
+						</div>
+						<div class="header-left-b">
+							<ul>
+								<li>
+									<a href="">QIQU!</a><i>奇趣</i></li>
+								<li>
+									<a href="kids.html">QIQU!BOYS</a><i>男生潮流</i></li>
+								<li>
+									<a href="girls.html">QIQU!GIRLS</a><i>女生潮流</i></li>
+								<li>
+									<a>QIQU!SHOW</a><i>奇趣展示</i></li>
+								<li>
+									<a href="style.html">QIQU!STYLE</a><i>奇趣风格</i></li>
+							</ul>
+						</div>
+					</div>
+					<div class="header-right" >
+						<ul>
+							<li><span class="hi">Hi~</span>[
+								<a href="login.html" target="_blank" class="loginbar">请登录</a> ] [
+								<a href="register.html" target="_blank">免费注册</a> ]<span>|</span></li>
+							<li>
+								<a href="">MY有货</a><i class="i0"></i><span>|</span></li>
+							<li><i class="i1"></i>
+								<a href="">我的订单</a><span>|</span></li>
+							<li><i class="i2"></i>
+								<a href="">我的收藏</a><span>|</span></li>
+							<li><i class="i3"></i>
+								<a href="">消息</a><span>|</span></li>
+							<li><i class="i4"></i>
+								<a href="">手机版</a>
+							</li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="header-middle">
+				<div class="header-m-l">
+					<ul>
+						<li class="li1">
+							<a href="#">
+								<h3>男生</h3>
+								<h3>BOYS</h3>
+							</a>
+						</li>
+						<li>
+							<a href="girls.html">
+								<h3>女生</h3>
+								<h3>GIRLS</h3>
+							</a>
+						</li>
+						<li>
+							<a href="kids.html">
+								<h3>潮童</h3>
+								<h3>KIDS</h3>
+							</a>
+						</li>
+						<li>
+							<a href="style.html">
+								<h3>创意生活</h3>
+								<h3>LIFE STYLE</h3>
+							</a>
+						</li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+				<div class="header-m-m">
+					<img src="image/logo-en.png" alt="">
+				</div>
+				<!--第二张图片-->
+				<div class="setinterval">
+						<img src="image/logo-ens.png" alt="">
+					</div>
+				<div class="header-m-b">
+					<div class="header-m-bb">
+						<form name="searchForm">
+							<input type="text" class="search" name="search" ng-model="search" placeholder="搜一搜">
+							<a href=""></a>
+							<!--搜索跳转-->
+						</form>
+					</div>
+					<div class="header-m-cart">
+						<!--当点击添加的时候购物车显示+i-->
+						<div class="cart"></div>
+						<div class="cart-big">
+							<div class="bigs">
+								<img src="image/empty_car.png" alt="">
+								<p>你的购物车暂无商品</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-bottom">
+				<ul class="ul1">
+					<li>
+						<a href="">新品到着</a>
+					</li>
+					<li>
+						<a href="">品牌一览</a>
+					</li>
+					<li class="licloths">
+						<a href="">服饰</a>
+						<div class="cloths">
+							<div class="clo">
+                            <dl>
+								<dt>上装</dt>
+								<dd>棉衣</dd>
+								<dd>羽绒服</dd>
+								<dd>夹克</dd>
+								<dd>卫衣</dd>
+								<dt>下装</dt>
+								<dd>休闲裤</dd>
+								<dd>牛仔裤</dd>
+							</dl>
+							<dl>
+								<dd>短裤</dd>
+								<dt>经典款型</dt>
+								<dd>圆领套头卫衣</dd>
+								<dd>学院风衬衫</dd>
+								<dd>街头风T恤</dd>
+								<dt>热门品牌</dt>
+								<dd>important</dd>
+								<dd>into the rainbow</dd>
+							</dl>
+							<dl>
+								<dd>MYGESMART</dd>
+								<dd>HEVRT BREVKER</dd>
+								<dd>STYLE</dd>
+								<dd>IZUUE</dd>
+								<dd>BLACK</dd>
+								<dd>ARE</dd>
+							</dl>
+							<dl>
+								<dd><img src="image/cloths.jpg" alt=""></dd>
+								<dd style="margin-top:0;">跟随你的潮流</dd>
+							</dl>
+							</div>
+					  </div>
+					</li>
+					<li class="licloths">
+						<a href="">鞋靴</a>
+                         <div class="cloths">
+							<div class="clo">
+                            <dl>
+								<dt>鞋屋</dt>
+								<dd>休闲/远动鞋</dd>
+								<dd>靴子</dd>
+								<dd>时装鞋</dd>
+								<dt>热门款型</dt>
+								<dd>复古跑鞋</dd>
+								<dd>帆布鞋</dd>
+								<dd>户外靴</dd>
+							</dl>
+							<dl>
+								<dt>热门品牌</dt>
+								<dd>ivybol/dd>
+								<dd>GAWS FOOT</dd>
+								<dd>masterplan</dd>
+								<dd>VANS</dd>
+								<dd>anything</dd>
+								<dd>important</dd>
+								<dd>rainbow</dd>
+							</dl>
+							<dl>
+								<dd>MYGESMART</dd>
+								<dd>HEVRT BREVKER</dd>
+								<dd>STYLE</dd>
+								<dd>IZUUE</dd>
+								<dd>BLACK</dd>
+								<dd>ARE</dd>
+							</dl>
+							<dl>
+								<dd><img src="image/show.jpg" alt=""></dd>
+								<dd style="margin-top:0;">跟随你的步伐</dd>
+							</dl>
+							</div>
+					  </div>  
+					</li>
+					<li class="licloths">
+						<a href="">包袋</a>
+						  <div class="cloths">
+							<div class="clo">
+                            <dl>
+								<dt>包</dt>
+								<dd>双肩包</dd>
+								<dd>手领包/单肩包</dd>
+								<dd>电脑包</dd>
+								<dt>钱包/卡包/手拿包</dt>
+								<dd>腰包</dd>
+								<dt>热门款型</dt>
+								<dd>帆布背包</dd>
+							</dl>
+							<dl>
+								<dd>街头款单肩包</dd>
+								<dd>多口袋双肩包</dd>
+								<dt>热门品牌</dt>
+								<dd>Stome Stamps</dd>
+								<dd>VANS</dd>
+								<dd>RANROW</dd>
+								<dd>Dmportant</dd>
+								<dd>ROOTOTE</dd>
+							</dl>
+							<dl>
+								<dd>MYGESMART</dd>
+								<dd>HEVRT BREVKER</dd>
+								<dd>FS5</dd>
+								<dd>IZUUE</dd>
+								<dd>BLACK</dd>
+								<dd>INTER ARE</dd>
+							</dl>
+							<dl>
+								<dd><img src="image/bag.jpg" alt=""></dd>
+								<dd style="margin-top:0;">出行必备包包</dd>
+							</dl>
+							</div>
+					  </div>  
+					</li>
+					<li>
+						<a href="">配饰·其他</a>
+					</li>
+					<li class="news">
+						<a href="">领卷中心</a>
+						<img src="image/new.png" alt="">
+					</li>
+					<li>
+						<a href="">随心逛</a>
+					</li>
+					<li>
+						<a href="">SALE</a>
+					</li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</header>
+		<!--l轮播图-->
+		<div class="banner">
+			<div id="box">
+				<ul>
+					<li style="display: block;"><img src="image/lunbo1.jpg" alt="" /></li>
+					<li><img src="image/lunbo2.jpg" alt="" /></li>
+					<li><img src="image/lunbo3.jpg" alt="" /></li>
+					<li><img src="image/lunbo4.jpg" alt="" /></li>
+					<li><img src="image/lunbo5.jpg" alt="" /></li>
+					<li><img src="image/lunbo6.jpg" alt="" /></li>
+					<li><img src="image/lunbo7.jpg" alt=""></li>
+					<li><img src="image/lunbo8.jpg" alt=""></li>
+				</ul>
+				<div id="icon">
+					<a href="" style="margin-left:2px"><img src="image/small1.jpg" alt=""></a>
+					<a href=""><img src="image/small7.jpg" alt=""></a>
+					<a href=""><img src="image/small6.jpg" alt=""></a>
+					<a href=""><img src="image/small8.jpg" alt=""></a>
+					<a href=""><img src="image/small4.jpg" alt=""></a>
+					<a href=""><img src="image/small2.jpg" alt=""></a>
+					<a href=""><img src="image/small3.jpg" alt=""></a>
+					<a href=""><img src="image/small5.jpg" alt=""></a>
+				</div>
+				<div class="prev"> < </div>
+				<div class="next"> > </div>
+				</div>
+			</div>
+			<!--轮播-->
+			<main>
+				<div class="sameTo">
+					<div class="sameTo1">
+						<h2>人气单品</h2>
+					</div>
+					<div class="sameTo2">
+						<ul>
+							<!--<li ng-repeat="l in li1" class="{{l == 11 ? 'special' : ''}}">
+								<a href="show.html" target="_blank"><img class="{{l == 11 ? 'pulse' : ''}}" src="{{l}}"  alt="加载中...."></a>
+							</li>-->
+							<li>
+								<a href="show.html"><img  src="image/same1.jpg"  alt="加载中...."></a>
+							</li>
+							<li>
+								<a href="show.html"><img  src="image/same2.jpg"  alt="加载中...."></a>
+							</li>
+							<li>
+								<a href="show.html"><img  src="image/same3.jpg"  alt="加载中...."></a>
+							</li>
+							<li>
+								<a href="show.html"><img  src="image/same4.jpg"  alt="加载中...."></a>
+							</li>
+							<li>
+								<a href="show.html"><img  src="image/same5.jpg"  alt="加载中...."></a>
+							</li>
+							<li>
+								<a href="show.html"><img  src="image/same6.jpg"  alt="加载中...."></a>
+							</li>
+							<li>
+								<a href="show.html"><img  src="image/same7.jpg"  alt="加载中...."></a>
+							</li>
+							<li>
+								<a href="show.html"><img  src="image/same8.jpg"  alt="加载中...."></a>
+							</li>
+							<li>
+								<a href="show.html"><img  src="image/same9.jpg"  alt="加载中...."></a>
+							</li>
+							<li>
+								<a href="show.html"><img  src="image/same10.jpg"  alt="加载中...."></a>
+							</li>
+							<li class="special">
+								<a href="show.html"><img class="pulse" src="image/same11.jpg"  alt="加载中...."></a>
+							</li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<!--一楼结束-->
+				<div class="sameTo">
+					<div class="sameTo1">
+						<h2>优先品牌</h2>
+					</div>
+					<div class="sameTo3">
+						<div class="mmm">
+							<ul class="move">
+								<!--<li ng-repeat="m in tab1" style="{{m == 3?'margin-right:0px':''}}"><img src="image/tab{{m}}.jpg" alt=""></li>-->
+								<li><img src="image/tab1.jpg" alt=""></li>
+								<li><img src="image/tab2.jpg" alt=""></li>
+								<li style="margin-right:0px;"><img src="image/tab3.jpg" alt=""></li>
+							</ul>
+							<ul class="hide">
+								<!--<li ng-repeat="h in tab2" style="{{h == 6?'margin-right:0px':''}}"><img src="image/tab{{h}}.jpg" alt=""></li>-->
+							    <li><img src="image/tab4.jpg" alt=""></li>
+								<li><img src="image/tab5.jpg" alt=""></li>
+								<li style="margin-right:0px;"><img src="image/tab6.jpg" alt=""></li>
+							</ul>
+							<ul class="hides">
+								<!--<li ng-repeat="hs in tab3" style="{{hs == 9?'margin-right:0px':''}}"><img src="image/tab{{hs}}.jpg" alt=""></li>-->
+							    <li><img src="image/tab7.jpg" alt=""></li>
+								<li><img src="image/tab8.jpg" alt=""></li>
+								<li style="margin-right:0px;"><img src="image/tab9.jpg" alt=""></li>
+							</ul>
+						</div>
+						  <div class="moveon"> < </div>
+						  <div class="hidenext"> > </div>
+						</div>
+						<div id="logodemo" ng-controller="demoController">
+							<div class="demo" ng-repeat="demo in demos">
+								<div class="line left-top"></div>
+								<div class="line right-bottom"></div>
+								<div class="content">
+									<span><img src = "{{demo.url}}" alt = ""/></span>
+									<em>{{demo.name}}</em>
+									<i></i>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<!--二楼结束-->
+					<div class="sameTo">
+						<div class="sameTo1">
+							<h2>最新速报</h2>
+						</div>
+						<div class="sameTo11">
+							<ul>
+								<!--<li ng-repeat="l2 in li2">
+									<a ng-sref=""><img src="image/new{{l2}}.jpg" alt=""></a>
+								</li>-->
+								<li><a><img src="image/new1.jpg" alt=""></a></li>
+								<li><a><img src="image/new2.jpg" alt=""></a></li>
+								<li><a><img src="image/new3.jpg" alt=""></a></li>
+								<li><a><img src="image/new4.jpg" alt=""></a></li>
+								<li><a><img src="image/new5.jpg" alt=""></a></li>
+								<li><a><img src="image/new6.jpg" alt=""></a></li>
+								<li><a><img src="image/new7.jpg" alt=""></a></li>
+							</ul>
+						</div>
+						<div class="sameTo2-r">
+							<img src="image/new8.jpg" alt="">
+							<div class="clear"></div>
+						</div>
+						<div class="sameTo2-b">
+							<a href=""><img src="image/new9.jpg" alt=""></a>
+							</li>
+						</div>
+					</div>
+					<!--三楼结束-->
+					<div class="sameTo">
+						<div class="sameTo1">
+							<h2>潮流上装</h2>
+						</div>
+						<div class="three-l">
+							<div class="three-l-top">
+								<a href=""><img src="image/three-l1.jpg" alt=""></a>
+								<a href=""><img src="image/three-l2.jpg" alt=""></a>
+							</div>
+							<div class="three-l-bottom">
+								<a href="">棉衣</a>
+								<a href="">羽绒服</a>
+								<a href="">大衣/风衣</a>
+								<a href="">夹克</a>
+								<a href="">卫衣</a>
+								<a href="">毛衣/针织</a>
+								<a href="">简约有型</a>
+								<a href="">运动先锋</a>
+								<a href="">街头原宿</a>
+								<a href="">英伦学院</a>
+							</div>
+						</div>
+						<div class="three-m">
+							<img src="image/three-m1.jpg" alt="">
+							<img src="image/three-m2.jpg" alt="">
+						</div>
+						<div class="three-r">
+							<ul class="ulr">
+								<li><img src="image/three-r1.jpg" alt=""></li>
+								<li><img src="image/three-r2.jpg" alt=""></li>
+								<li><img src="image/three-r3.jpg" alt=""></li>
+								<li><img src="image/three-r4.jpg" alt=""></li>
+								<li><img src="image/three-r5.jpg" alt=""></li>
+								<li><img src="image/three-r6.jpg" alt=""></li>
+							</ul>
+						</div>
+						<div class="clear"></div>
+						<div class="three-bottom">
+							<ul class="ulb">
+								<li><img src="image/three-bo1.jpg" alt=""></li>
+								<li><img src="image/three-bo2.jpg" alt=""></li>
+								<li><img src="image/three-bo4.jpg" alt=""></li>
+								<li><img src="image/three-bo4.jpg" alt=""></li>
+								<li><img src="image/three-bo5.jpg" alt=""></li>
+							</ul>
+							<div class="clear"></div>
+						</div>
+						<!--四楼结束-->
+						<div class="sameTo">
+							<div class="sameTo1">
+								<h2>潮流下装</h2>
+							</div>
+							<div class="three-l">
+								<div class="three-l-top">
+									<a href=""><img src="image/ku1.jpg" alt=""></a>
+									<a href=""><img src="image/ku2.jpg" alt=""></a>
+								</div>
+								<div class="three-l-bottom">
+									<a href="">棉衣</a>
+									<a href="">羽绒服</a>
+									<a href="">大衣/风衣</a>
+									<a href="">夹克</a>
+									<a href="">卫衣</a>
+									<a href="">毛衣/针织</a>
+									<a href="">简约有型</a>
+									<a href="">运动先锋</a>
+									<a href="">街头原宿</a>
+									<a href="">英伦学院</a>
+								</div>
+							</div>
+							<div class="three-m">
+								<img src="image/ku3.jpg" alt="">
+								<img src="image/ku4.jpg" alt="">
+							</div>
+							<div class="three-r">
+								<ul class="ulr">
+									<li><img src="image/ku5.jpg" alt=""></li>
+									<li><img src="image/ku6.jpg" alt=""></li>
+									<li><img src="image/ku7.jpg" alt=""></li>
+									<li><img src="image/ku8.jpg" alt=""></li>
+									<li><img src="image/ku9.jpg" alt=""></li>
+									<li><img src="image/ku10.jpg" alt=""></li>
+								</ul>
+							</div>
+							<div class="clear"></div>
+							<div class="three-bottom">
+								<ul class="ulb">
+									<li><img src="image/ku11.jpg" alt=""></li>
+									<li><img src="image/ku12.jpg" alt=""></li>
+									<li><img src="image/ku13.jpg" alt=""></li>
+									<li><img src="image/ku14.jpg" alt=""></li>
+									<li><img src="image/ku15.jpg" alt=""></li>
+								</ul>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="see">
+							<a href="">查看更多</a>
+						</div>
+			</main>
+			<footer>
+				<div class="footer-top">
+					<div class="footer-top-top">
+						<dl>
+							<dd>
+								<div class="title-top">
+									<div class="line"></div>
+									<div class="text">
+										<span>奇趣STYLE</span>
+									</div>
+								</div>
+								<div class="title-bottom">
+									<img src="image/title.gif" alt="">
+								</div>
+							</dd>
+							<dd style="	margin:0 20px;">
+								<div class="title-top">
+									<div class="line"></div>
+									<div class="text">
+										<span>购物STYLE</span>
+									</div>
+								</div>
+								<div class="title-bottom">
+									<img src="image/jinqing.jpg" alt="">
+								</div>
+							</dd>
+							<dd>
+								<div class="title-top">
+									<div class="line"></div>
+									<div class="text">
+										<span>时尚STYLE</span>
+									</div>
+								</div>
+								<div class="title-bottom">
+									<img src="image/right.jpg" alt="">
+								</div>
+							</dd>
+						</dl>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<div class="footer-bottom-bottom">
+						<div class="left-left">
+							<ul>
+								<li>
+									<i></i>
+									<span>100%</span>
+									<a href="">品牌正品</a>
+								</li>
+								<li>
+									<i class="ii2"></i>
+									<span>七天</span>
+									<a href="">无理由退换货</a>
+								</li>
+								<li>
+									<i class="ii3"></i>
+									<span>便捷</span>
+									<a href="">在线客服</a>
+								</li>
+							</ul>
+							<div class="clear"></div>
+						</div>
+						<div class="dl">
+							<dl>
+								<dt>新手指南</dt>
+								<dd>注册登录</dd>
+								<dd>选购商品</dd>
+								<dd>订单支付</dd>
+								<dd>收货退款</dd>
+							</dl>
+							<dl>
+								<dt>新手指南</dt>
+								<dd>注册登录</dd>
+								<dd>选购商品</dd>
+								<dd>订单支付</dd>
+								<dd>收货退款</dd>
+							</dl>
+							<dl>
+								<dt>新手指南</dt>
+								<dd>注册登录</dd>
+								<dd>选购商品</dd>
+								<dd>订单支付</dd>
+								<dd>收货退款</dd>
+							</dl>
+							<dl>
+								<dt>新手指南</dt>
+								<dd>注册登录</dd>
+								<dd>选购商品</dd>
+								<dd>订单支付</dd>
+								<dd>收货退款</dd>
+							</dl>
+							<dl>
+								<dt>新手指南</dt>
+								<dd>注册登录</dd>
+								<dd>选购商品</dd>
+								<dd>订单支付</dd>
+								<dd>收货退款</dd>
+							</dl>
+							<dl>
+								<dt>新手指南</dt>
+								<dd>注册登录</dd>
+								<dd>选购商品</dd>
+								<dd>订单支付</dd>
+								<dd>收货退款</dd>
+							</dl>
+							<dl style="margin-right:0px;">
+								<dt>新手指南</dt>
+								<dd>注册登录</dd>
+								<dd>选购商品</dd>
+								<dd>订单支付</dd>
+								<dd>收货退款</dd>
+							</dl>
+							<div class="footer-last">
+								<div class="footer-f">
+									<a href=""><img src="image/id1.png" alt=""></a>
+									<a href=""><img src="image/id.png" alt=""></a>
+									<a href=""><img src="image/id2.png" alt=""></a>
+								</div>
+								<div class="footer-m">
+									<p>
+										<a href="">返回首页</a><span>|</span>
+										<a href="">QIQU!GO 奇趣</a><span>|</span>
+										<a href="">新力传媒</a><span>|</span>
+										<a href="">联系我们</a><span>|</span>
+										<a href="">商家入驻</a><span>|</span>
+										<a href="">隐私条款</a><span>|</span>
+										<a href="">友情链接</a>
+									</p>
+									<p>CopyRight © 20016-2026 NewPower--ST Co. 版权所有 经营许可证编号：沪A2-20160395</p>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+				<div class="foot-top">
+					<a href=""><span></span></a>
+				</div>
+			</footer>
+	</body>
+</html>

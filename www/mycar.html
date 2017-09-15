@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车详情</title>
+    <script src="libs/jquery-3.1.0.js"></script>
+    <script src="libs/angular.js"></script>
+    <script src="libs/jquery.cookie.js"></script>
+    <script src="js/mycar.js"></script>
+    <link rel="stylesheet" href="css/mycar.css">
+</head>
+<body ng-app="myApp" ng-controller="myAngular">
+    <header>
+        <div class="header-tops">
+            <div class="header-l">
+            <a href="index.html"><img src="image/logo-en.png" alt="logio图标"></a>
+        </div>
+        <ul class="right">
+            <li><span class="hi">Hi~</span>
+                <a href="login.html" class="loginbar">[ 请登录 ]</a> 
+                <a href="register.html" class="registerbar"> [ 免费注册 ]</a> </li>
+            <li class="flip">
+                <a href="">MY有货</a><i></i>
+            <div class="flip-b">
+                <p>我的收藏</p>
+                <p>优惠券</p>
+            </div>
+            </li>
+            <li>
+              <a href="">订单中心</a></li>
+            <li>
+              <a href="">帮助中心</a></li>
+        </ul>
+    </div>
+         <div class="clear"></div>
+    </header>
+<main>
+   <div class="cartshow">
+     <ul>
+        <span></span>
+        <li style="color:#000;">查看购物车</li>
+        <li style="text-align:center;">填写订单</li>
+        <li style="text-align:right;">付款，完成购买</li>
+     </ul>
+   </div>
+  <div class="ToCar"> 	
+    <table> 
+    	<tr>
+         <th>商品信息</th>
+         <th>单价(元)</th>
+         <th>返有货币</th>
+         <th>数量</th>
+         <th>小计(元)</th>
+         <th>操作</th>
+        </tr>
+        <tr>  
+          <td id="song" colspan="6"><label all-orcan><input type="checkbox">全选/取消全选 </label></td>  
+        </tr>  
+         <tr ng-repeat="data in dataList">  
+             <td><div id="goods"><input type="checkbox" one-check items={{data.items}}></div>
+				<div id="goods-img"><img src="{{data.image}}" alt="" /></div>	
+				<div class="ri">
+					<p style="color: #468fa2;">{{data.title}}</p>
+					<p style="color: #999;"><span>颜色:{{data.color}}</span>&#x3000;<span>尺码:{{data.size}}</span></p>
+				</div>
+             </td>  
+             <td ng-cloak>￥{{data.oneprice}}</td>  
+             <td>0个</td>
+             <td><input type="text" ng-cloak ng-model="data.num"  items="{{data.items}}" style="width:40px;text-align:center;margin-left: 15px;"> <button my-adds items="{{data.items}}" ng-class="{cursors:true}" >+</button>  <button my-minus items="{{data.items}}" ng-class="{cursors:true}" >-</button>　</td>  
+             <td ng-cloak>￥{{data.price}}</td>  
+             <td><a href=""  class="over" ng-click="overs()" >删除</a><a href="login.html">加入收藏</a></td>
+         </tr>   
+        </table>  
+        <div class="all-price">总价格：{{allPrices()}}</div> 
+        </div> 
+    <div class="clear"></div>
+   <div class="carnew">
+      <a href="show.html">再逛逛</a>
+      <a href="#">去结算</a>
+   </div>
+   <div class="cou">
+       <img src="image/cou.jpg" alt=""><img src="image/co.jpg" alt="" style="margin-top:10px;">
+   </div>
+</main>
+<footer>
+    <div class="footer-bottom">
+        <div class="footer-bottom-bottom">
+            <div class="left-left">
+                <ul>
+                    <li>
+                        <i></i>
+                        <span>100%</span>
+                        <a href="">品牌正品</a>
+                    </li>
+                    <li>
+                        <i class="ii2"></i>
+                        <span>七天</span>
+                        <a href="">无理由退换货</a>
+                    </li>
+                    <li>
+                        <i class="ii3"></i>
+                        <span>便捷</span>
+                        <a href="">在线客服</a>
+                    </li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div class="dl">
+                <dl>
+                    <dt>新手指南</dt>
+                    <dd>注册登录</dd>
+                    <dd>选购商品</dd>
+                    <dd>订单支付</dd>
+                    <dd>收货退款</dd>
+                </dl>
+                <dl>
+                    <dt>新手指南</dt>
+                    <dd>注册登录</dd>
+                    <dd>选购商品</dd>
+                    <dd>订单支付</dd>
+                    <dd>收货退款</dd>
+                </dl>
+                <dl>
+                    <dt>新手指南</dt>
+                    <dd>注册登录</dd>
+                    <dd>选购商品</dd>
+                    <dd>订单支付</dd>
+                    <dd>收货退款</dd>
+                </dl>
+                <dl>
+                    <dt>新手指南</dt>
+                    <dd>注册登录</dd>
+                    <dd>选购商品</dd>
+                    <dd>订单支付</dd>
+                    <dd>收货退款</dd>
+                </dl>
+                <dl>
+                    <dt>新手指南</dt>
+                    <dd>注册登录</dd>
+                    <dd>选购商品</dd>
+                    <dd>订单支付</dd>
+                    <dd>收货退款</dd>
+                </dl>
+                <dl>
+                    <dt>新手指南</dt>
+                    <dd>注册登录</dd>
+                    <dd>选购商品</dd>
+                    <dd>订单支付</dd>
+                    <dd>收货退款</dd>
+                </dl>
+                <dl style="margin-right:0px;">
+                    <dt>新手指南</dt>
+                    <dd>注册登录</dd>
+                    <dd>选购商品</dd>
+                    <dd>订单支付</dd>
+                    <dd>收货退款</dd>
+                </dl>
+                <div class="footer-last">
+                    <div class="footer-f">
+                        <a href=""><img src="image/id1.png" alt=""></a>
+                        <a href=""><img src="image/id.png" alt=""></a>
+                        <a href=""><img src="image/id2.png" alt=""></a>
+                    </div>
+                    <div class="footer-m">
+                        <p>
+                            <a href="">返回首页</a><span>|</span>
+                            <a href="">QIQU!GO 奇趣</a><span>|</span>
+                            <a href="">新力传媒</a><span>|</span>
+                            <a href="">联系我们</a><span>|</span>
+                            <a href="">商家入驻</a><span>|</span>
+                            <a href="">隐私条款</a><span>|</span>
+                            <a href="">友情链接</a>
+                        </p>
+                        <p>CopyRight © 20016-2026 NewPower--ST Co. 版权所有 经营许可证编号：沪A2-20160395</p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

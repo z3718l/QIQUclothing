@@ -1,0 +1,47 @@
+.header-bottom{
+	background-color:#5e4b3c; 
+}
+.header-m-l ul .li4{
+  background-color:#5e4b3c; 
+}
+
+.header-m-l ul .li4 a h3{
+	color:#fff;
+}
+.header-m-l ul .li4 a h3:nth-of-type(2){
+	color:#fff; 
+}
+.header-m-bb form a{
+	background-color: #5e4b3c;
+}
+.header-m-cart .cart{
+	background-image: url(../image/fsshop.png);
+}
+.header-left-b ul li i{
+	background-color: #5e4b3c;
+	border:1px solid #5e4b3c;
+}
+.banner{width:1150px; margin: 10px auto 0; position: relative; }
+.banner #box{position: relative; width: 1150px;height:450px;}
+.banner #box ul{height: 450px;}
+.banner #box ul li{position: absolute;display: none;}
+.banner #box ul li img{width: 100%;height: 100%;}
+.banner #icon{position: absolute;bottom: 5px;left:calc(50% - 84px);}
+.banner #icon span{margin-right: 5px; display: inline-block;width: 15px;height: 15px; text-align: center;line-height: 15px; border-radius: 50%; background-color: #3e3e3e;}
+.red-color{background: #fff!important;}
+.banner .prev,.banner .next{display: none; position: absolute;padding: 10px 15px;background:#fff;opacity: 0.95; color: #59585a;top: calc(50% - 24px);font-size: 20px;}
+.prev{left: 0px;cursor: pointer;}
+.next{right: 0px; cursor: pointer;}
+
+main{
+	width: 1150px;
+   margin: 0 auto;
+}
+
+.angel ul li{
+   float: left;
+   margin: 0 6px 8px 0;
+}
+.angel ul li a img:hover{
+  opacity: 0.8;
+}
